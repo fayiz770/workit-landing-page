@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'fraunces';
+    src: url('assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'manrope';
+    src: url('assets/fonts/manrope/Manrope-VariableFont_wght.ttf');
+}
+
+:root {
+    --font-family-fraunces: 'fraunces', sans-serif;
+    --font-family-manrope: 'manrope', sans-serif;
+    --green: #44FFA1;
+    --purple-900: #24053E;
+    --purple-500: #584d62;
+    --purple-100: #FCF8FF;
+    --white: #FFFFFF;
+}
+
+html,
+body {
+    font-family: var(--font-family-manrope);
+}
+
+.header {
+    color: var(--white);
+    background: var(--purple-900);
+}
+
+.tailored,
+a {
+    border-bottom: 2px solid var(--green);
+    padding-bottom: .2em;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.hero-text,
+.header {
+    padding: 2em 1.25em;
+}
+
+.image-hero {
+    width: 20px;
+    height: 20px;
+}
+
+.button {
+    font-weight: bold;
+    width: fit-content;
+    padding: 1em;
+    color: var(--purple-900);
+    background: var(--green);
+}
